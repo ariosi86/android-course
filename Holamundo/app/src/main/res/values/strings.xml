@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hola mundo</string>
+    <string name="view_name">Hola primera app</string>
+    <string name="btn1_text">Presionar</string>
+</resources>

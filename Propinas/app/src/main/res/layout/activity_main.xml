@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.antoniorios.propinas.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/cantNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese una cantidad"
+            android:inputType="numberDecimal"
+            android:layout_above="@+id/bt10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp" />
+
+        <TextView
+            android:id="@+id/canttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/cantNumber"
+            android:layout_marginTop="21dp"
+            android:hint="Ingrese un valor"
+            android:text="Cantidad"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propina de 10%"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/canttext"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="122dp" />
+
+        <Button
+            android:id="@+id/bt20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propina de 15%"
+            android:layout_marginStart="24dp"
+            android:layout_alignBaseline="@+id/bt10"
+            android:layout_alignBottom="@+id/bt10"
+            android:layout_toEndOf="@+id/canttext" />
+
+        <TextView
+            android:id="@+id/propinaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propina"
+            android:textSize="18sp"
+            android:layout_below="@+id/canttext"
+            android:layout_alignStart="@+id/canttext"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="18sp"
+            android:layout_below="@+id/propinaText"
+            android:layout_alignStart="@+id/propinaText"
+            android:layout_marginTop="28dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
